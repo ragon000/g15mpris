@@ -25,3 +25,11 @@ To make the binary avaliable to your whole system, run
 ```bash
 sudo cp g15mpris /usr/local/bin
 ```
+
+
+# TODO
+
+- [ ] Scrolling text if the title/album is too long
+- [ ] displaying how many seconds the music will play until end (maybe with a bar at the bottom)
+- [ ] make the buttons do something, maybe repeat, random, spotify favorite (if possible)
+- [ ] better design
