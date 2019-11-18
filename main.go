@@ -69,7 +69,6 @@ func screenInit() {
 	}
 	canvas = (*C.struct_g15canvas)(C.malloc(C.sizeof_struct_g15canvas))
 	C.g15r_initCanvas(canvas)
-	log.Print(g15screen_fd)
 }
 
 func screenDraw(md MusicMetadata) {
@@ -96,7 +95,6 @@ func main() {
 	screenInit()
 	for {
 		rs := <-sigchan
-                log.Printf("rs: %v",rs)
 		screenDraw(getMetadata(rs))
 
 	}
